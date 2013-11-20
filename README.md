@@ -19,4 +19,5 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## License
 Copyright (c) 2013 Johannes J. Schmidt, TF
+
 Licensed under the MIT license.
