@@ -1,4 +1,4 @@
-roy-request
+roy-request [![Build Status](https://secure.travis-ci.org/jo/roy-request.png?branch=master)](http://travis-ci.org/jo/roy-request)
 ===========
 [CouchDB](http://couchdb.apache.org/) HTTP adapter for [roy-replicator](https://github.com/jo/roy-replicator) based on
 [request](https://github.com/mikeal/request).
