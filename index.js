@@ -144,7 +144,32 @@ module.exports = function(url, options, callback) {
     
 
     // Retrieve bulk documents (source only)
-    // allDocs: function(ids) {},
+    allDocs: function(options, callback) {
+      if (typeof options === 'function') {
+        callback = options;
+        options = {};
+      }
+
+      var keys = options.keys;
+      delete options.keys;
+
+      request({
+        method: keys ? 'POST' : 'GET',
+        url: url + '/_all_docs',
+        qs: options,
+        body: keys ? { keys: keys } : null
+      }, function(err, resp, body) {
+        if (err) {
+          return callback(err);
+        }
+
+        if (resp.statusCode === 200) {
+          return callback(err, body);
+        }
+
+        callback(body);
+      });
+    },
 
     // Update batch of documents (target only)
     bulkDocs: function(docs, options, callback) {

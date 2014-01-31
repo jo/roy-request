@@ -2,7 +2,7 @@
 
 var couch = process.env.COUCH || 'http://localhost:5984';
 
-var adapter = require('../lib/roy-request');
+var adapter = require('..');
 
 var request = require('request').defaults({ jar: false, json: true });
 

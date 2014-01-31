@@ -1,7 +1,7 @@
 {
   "name": "roy-request",
   "description": "CouchDB HTTP client for roy based on request.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jo/roy-request",
   "author": {
     "name": "Johannes J. Schmidt",
@@ -21,7 +21,7 @@
       "url": "https://github.com/jo/roy-request/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/roy-request",
+  "main": "index.js",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -30,6 +30,10 @@
     "test": "nodeunit test/*-test.js"
   },
   "keywords": ["roy"],
+  "devDependencies": {
+    "jshint": "~2.3.0",
+    "nodeunit": "~0.8.2"
+  },
   "dependencies": {
     "request": "~2.27.0"
   }

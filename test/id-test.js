@@ -1,6 +1,6 @@
 'use strict';
 
-var adapter = require('../lib/roy-request');
+var adapter = require('..');
 
 exports.id = {
   'basics': function(test) {
